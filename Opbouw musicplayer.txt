@@ -1,0 +1,74 @@
+Commands [
+	Add,
+	Help,
+	Join,
+	Play,
+	Prev,
+	Queue,
+	Skip
+]
+
+Reacts on queue [
+	JoinChecker
+	Play song (!play 'link')
+	Show queue (!queue alias !list)
+	Next song (!next alias !skip (50% of online))
+]
+
+Runs apart from queue but is needed [
+	Add2Pl (!add, !add prev)
+	Play previous song (!back alias !prev)
+	Pause/Resume (based on users in channel)
+]
+
+GUI [
+	Change volume
+	Database information (ip, username, password)
+	
+	Config [
+		Token
+ 		Prefix
+	]
+]
+
+List<song> queue;
+String lastSong;
+
+1 Song a
+1 Song b
+1 Song c
+1 Song d
+1 Song e
+
+2 Song a
+2 Song b
+2 Song x
+2 Song y
+2 Song z
+
+Player 1 joins
+
+queue (a,b,c,d,e) loaded
+
+Player 2 joins
+
+queue (x,y,z) added
+
+Player 1 leaves
+
+queue (c,d,e) removed
+
+Dictionary<String,List<String>>
+
+list<song> x = new List<>;
+for (String player : players) {
+	x.add(db.get(songs));
+}
+
+//remove doubles
+http://www.java67.com/2015/03/how-to-remove-duplicates-from-arraylist.html
+
+//remove played
+
+
+// = queue tada
